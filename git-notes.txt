@@ -1,0 +1,38 @@
+All commands are preceded by 'git'
+init
+Clone a Repo:clone [URL] [directory name]
+status
+.gitignore
+diff
+Skip staging files: commit -a 
+mv [source] [destination]
+log
+	-n: displat the n most recents commits
+	-p: display differences introduced in each commit
+	--stat: some statistics
+	--pretty: make it pretty
+	--pretty=oneline
+	--pretty=fromat"%h - %an : %s"
+	--graph
+	--since=2.weeks
+	--after= "
+	--committer
+commit --amend
+unstage: git reset HEAD <file>
+unmodify: git checkout -- <file>
+git remote 
+	-v : show stored url
+	add [shortname] [url]
+	show [remote-name] :shows tracking information and URL
+	rename [remote] [new-name] :this also changes remote branches
+git fetch [remote-name] |note|->this does not merge the fetched changes 'git pull' does
+git push [remote-name] [branch-name]
+git tag :lists tags
+	-a [v(ver no.)]: create an annoted tag
+git show [tag]
+git config --global alias.[alias] [full command]
+
+git branch [branch-name] :create a branch name
+git checkout [branch] :switch branche
+git branch -b [branch] : create a new branch and switch to it
+git merge
