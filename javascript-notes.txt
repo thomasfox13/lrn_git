@@ -1,0 +1,30 @@
+Object LIterals
+
+var obj = {
+	property1: "item1",
+	property2: 1000,
+	property3: 'abc'
+	"property4": "something"
+};
+
+Retrieval
+
+obj[property1] //--> "item1"
+obj.property1 //--> "item1"
+obj["property4"] //--> "something"
+
+var a-value = obj.property1 || default value;
+
+if (typeof Object.create !== 'function') {
+	Object.create = function (o) {
+		var F = function () {};
+		F.prototype = o;
+		return new F();
+	};
+
+typeof "string" //'string'
+
+var item;
+for (item in obj) {}
+
+delete obj.property1;
