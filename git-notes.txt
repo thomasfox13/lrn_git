@@ -36,3 +36,5 @@ git branch [branch-name] :create a branch name
 git checkout [branch] :switch branche
 git branch -b [branch] : create a new branch and switch to it
 git merge
+git mergetool : help to resolve conflicts
+git push [remotename] :[branch] //delete a remote branch
